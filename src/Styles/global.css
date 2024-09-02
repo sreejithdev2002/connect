@@ -1,0 +1,155 @@
+*,
+*::after,
+*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 20px;
+}
+
+.header div, .header div ul{
+    display: flex;
+}
+
+.header div ul{
+    list-style: none;
+}
+
+.header div ul li, .header button{
+    margin: 0px 5px;
+}
+
+.header button{
+    padding: 8px 16px;
+    border-radius: 2px;
+    border: none;
+    font-size: 14px;
+    color: white;
+}
+
+.welcome{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 94vh;
+}
+
+.welcome :where(h1,h3,p){
+    line-height: 50px;
+}
+
+.welcome h3{
+    font-size: 2em;
+    color: #2d2d2d;
+}
+
+.welcome h1{
+    font-size: 5em;
+}
+
+.welcome button{
+    padding: 12px 24px;
+    margin: 30px 0px;
+    border-radius: 3px;
+    border: none;
+    background-color: #03ad03;
+    color: white;
+}
+
+.searchJobs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: beige; */
+    margin: 50px 0px;
+}
+
+.searchJobs form{
+    width: 50%;
+    border-radius: 20px;
+    background-color: rgb(243, 243, 243);
+    padding: 30px 50px;
+}
+
+.inputDiv{
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+}
+
+.inputDiv input{
+    padding: 10px;
+    margin: 5px 0px;
+    border-radius: 2px;
+    border: 1px solid #d7d7d7;
+    outline: none;
+}
+
+.inputDiv input:focus{
+    border: 1px solid #029a02;
+}
+
+.inputDivCheckBox input{
+    margin: 0px 10px;
+    accent-color: #029a02;
+}
+
+.showJobs{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.showJobsGrid{
+    display: grid;
+    grid-template-columns: auto auto;
+    column-gap: 50px;
+    row-gap: 20px;
+}
+
+.jobsCard{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    background-color: rgb(246, 246, 246);
+    padding: 10px 20px;
+    border-radius: 5px;
+    width: 23vw;
+}
+
+.jobsCard h2{
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.jobsCard h3{
+    font-size: 18px;
+    font-weight: 600;
+    color: rgb(43, 43, 43);
+    line-height: 10px;
+    margin: 5px 0px 10px 0px;
+}
+
+.jobsCard p{
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #4c4c4c;
+    font-weight: 100;
+}
+
+.jobsCard div button{
+    padding: 5px 10px;
+    margin-top: 20px;
+    margin-right: 10px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+}
