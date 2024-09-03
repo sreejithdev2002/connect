@@ -75,7 +75,16 @@
     width: 50%;
     border-radius: 20px;
     background-color: rgb(243, 243, 243);
-    padding: 30px 50px;
+    padding: 20px 50px;
+}
+
+.searchJobs form button{
+    padding: 10px 15px;
+    margin: 15px 0px 0px 5px;
+    border: none;
+    color: white;
+    background-color: #029a02;
+    border-radius: 3px;
 }
 
 .inputDiv{
@@ -103,8 +112,14 @@
 
 .showJobs{
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+.showJobs h1{
+    margin-bottom: 20px;
+    font-weight: 600;
 }
 
 .showJobsGrid{

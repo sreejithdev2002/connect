@@ -1,20 +1,23 @@
-import React from 'react'
+import React from "react";
 
-function JobsCard() {
+function JobsCard({ jobs }) {
   return (
-    <div className='jobsCard'>
-        <h2>React.js Developer</h2>
-        <h3>Softroniics</h3>
-        <p>Experience: Fresher</p>
-        <p>Skills: HTML, CSS, JavaScript (etc)...</p>
-        <div>
-        <button id='applyBtn' style={{backgroundColor: "red"}}>Apply</button>
-        <button id='saveBtn' style={{backgroundColor: "green"}}>Save</button>
-        </div>
-
-
+    <div className="jobsCard">
+      <h2>{jobs.name}</h2>
+      <h3>{jobs.company}</h3>
+      <p>{jobs.experience}</p>
+      <p>{jobs.location}</p>
+      <p>{jobs.skills}</p>
+      <div>
+        <button id="applyBtn" style={{ backgroundColor: "red" }}>
+          Apply
+        </button>
+        <button id="saveBtn" style={{ backgroundColor: "green" }}>
+          Save
+        </button>
+      </div>
     </div>
-  )
+  );
 }
 
-export default JobsCard
+export default JobsCard;

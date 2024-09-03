@@ -49,6 +49,7 @@ function SearchJobs() {
           />
           <label>Experienced</label>
         </div>
+        <button type="submit">Search Jobs</button>
       </form>
     </div>
   );
