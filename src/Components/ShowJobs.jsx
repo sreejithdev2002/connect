@@ -1,4 +1,5 @@
 import React from "react";
+import '../Styles/global.css'
 import JobsCard from "./JobsCard";
 
 function ShowJobs() {
@@ -18,6 +19,14 @@ function ShowJobs() {
       location: "Perinthalmanna",
       experience: "Experienced",
       skills: "Node.js, Express.js, MongoDB",
+    },
+    {
+      id: 3,
+      name: "MERN Stack Developer",
+      company: "Softroniics",
+      location: "Palakkad",
+      experience: "Fresher",
+      skills: "React.js, Node.js, Express.js, MongoDB",
     },
   ];
 

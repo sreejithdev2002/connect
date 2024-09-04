@@ -1,170 +1,426 @@
 *,
 *::after,
-*::before{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-weight: 400;
 }
 
-.header{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 5px 20px;
+/* HEADER PAGE CSS */
+
+.header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 20px;
+  background-color: white;
+  /* border-bottom: 1px solid rgb(237, 237, 237); */
 }
 
-.header div, .header div ul{
-    display: flex;
+.header h2 {
+  font-weight: 700;
 }
 
-.header div ul{
-    list-style: none;
+.header div,
+.header div ul {
+  display: flex;
 }
 
-.header div ul li, .header button{
-    margin: 0px 5px;
+.header div ul {
+  list-style: none;
 }
 
-.header button{
-    padding: 8px 16px;
-    border-radius: 2px;
-    border: none;
-    font-size: 14px;
-    color: white;
+.header div ul li,
+.header button {
+  margin: 0px 5px;
 }
 
-.welcome{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 94vh;
+.header button {
+  padding: 8px 16px;
+  border-radius: 2px;
+  border: none;
+  font-size: 14px;
+  color: white;
 }
 
-.welcome :where(h1,h3,p){
-    line-height: 50px;
+#headerLinks {
+  color: green;
+  margin: 0px 10px;
+  cursor: pointer;
 }
 
-.welcome h3{
-    font-size: 2em;
-    color: #2d2d2d;
+#headerLinks:hover {
+  color: #03ad03;
 }
 
-.welcome h1{
-    font-size: 5em;
+/* WELCOME PAGE CSS */
+
+.welcome {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 94vh;
 }
 
-.welcome button{
-    padding: 12px 24px;
-    margin: 30px 0px;
-    border-radius: 3px;
-    border: none;
-    background-color: #03ad03;
-    color: white;
+.welcome :where(h1, h3, p) {
+  line-height: 60px;
+  /* color: white; */
 }
+
+.welcome h3 {
+  font-size: 2.5em;
+  color: #0e0e0e;
+}
+
+.welcome h1 {
+  font-size: 7em;
+}
+
+.welcome button {
+  padding: 12px 24px;
+  margin: 30px 0px;
+  border-radius: 3px;
+  border: none;
+  background-color: #03ad03;
+  color: white;
+  cursor: pointer;
+}
+
+.welcome button:hover {
+  background-color: #029a02;
+}
+
+/* SEARCH JOBS CSS */
 
 .searchJobs {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    /* background-color: beige; */
-    margin: 50px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-color: beige; */
+  margin: 50px 0px;
 }
 
-.searchJobs form{
-    width: 50%;
-    border-radius: 20px;
-    background-color: rgb(243, 243, 243);
-    padding: 20px 50px;
+.searchJobs form {
+  width: 50%;
+  border-radius: 20px;
+  background-color: rgb(243, 243, 243);
+  padding: 20px 50px;
 }
 
-.searchJobs form button{
-    padding: 10px 15px;
-    margin: 15px 0px 0px 5px;
-    border: none;
-    color: white;
-    background-color: #029a02;
-    border-radius: 3px;
+.searchJobs form button {
+  padding: 10px 15px;
+  margin: 15px 0px 0px 5px;
+  border: none;
+  color: white;
+  background-color: #029a02;
+  border-radius: 3px;
 }
 
-.inputDiv{
+.inputDiv {
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+}
+
+.inputDiv input {
+  padding: 10px;
+  margin: 5px 0px;
+  border-radius: 2px;
+  border: 1px solid #d7d7d7;
+  outline: none;
+}
+
+.inputDiv input:focus {
+  border: 1px solid #029a02;
+}
+
+.inputDivCheckBox input {
+  margin: 0px 10px;
+  accent-color: #029a02;
+}
+
+/* SHOW JOBS CSS */
+
+.showJobs {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0px;
+}
+
+.showJobs h1 {
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+.showJobsGrid {
+  display: grid;
+  grid-template-columns: auto auto;
+  column-gap: 50px;
+  row-gap: 20px;
+}
+
+/* JOBS CARD CSS */
+
+.jobsCard {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  background-color: rgb(246, 246, 246);
+  padding: 10px 20px;
+  border-radius: 5px;
+  width: 23vw;
+}
+
+.jobsCard h2 {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.jobsCard h3 {
+  font-size: 18px;
+  font-weight: 600;
+  color: rgb(43, 43, 43);
+  line-height: 10px;
+  margin: 5px 0px 10px 0px;
+}
+
+.jobsCard p {
+  font-size: 12px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #4c4c4c;
+  font-weight: 100;
+}
+
+.jobsCard div button {
+  padding: 5px 10px;
+  margin-top: 20px;
+  margin-right: 10px;
+  border: none;
+  border-radius: 5px;
+  color: white;
+}
+
+#jobName {
+  cursor: pointer;
+}
+
+#jobName:hover {
+  text-decoration: 1.5px underline;
+  color: rgb(0, 0, 160);
+}
+
+#jobDescription {
+  margin-top: 5px;
+  max-width: 80%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* PROFILE PAGE CSS */
+
+.profile {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0px;
+}
+
+.profileCard {
+  margin: 10px 0px;
+  display: flex;
+  justify-content: start;
+  padding: 20px 30px;
+  width: 50%;
+  background-color: #f6f6f6;
+  border-radius: 5px;
+}
+
+.image {
+  width: 200px;
+  border-radius: 50%;
+  border: 1px solid rgb(215, 215, 215);
+  aspect-ratio: 1/1;
+  background-color: sandybrown;
+  background-size: cover;
+  background-position: center;
+}
+
+.profileUsername {
+  margin-left: 100px;
+}
+
+.proUserSocial ul {
+  display: flex;
+  list-style: none;
+  margin-top: 50px;
+}
+
+.proUserSocial ul li {
+  margin-right: 10px;
+  padding: 5px 10px;
+  border-radius: 5px;
+  background-color: #e2e2e2;
+}
+
+/* SINGLE JOB PAGE CSS */
+
+.singleJob {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 50px;
+}
+
+.sinJobHeader {
+  display: flex;
+  justify-content: space-between;
+  border-radius: 5px 5px 0px 0px;
+  border-bottom: 1px solid rgb(216, 216, 216);
+}
+
+#sinJobDiv {
+  display: flex;
+  align-items: center;
+}
+
+.sinJobHeader,
+.sinJobDetails,
+.sinJobDescription,
+.sinJobBtn {
+  width: 50%;
+  padding: 10px;
+  background-color: #f4f4f4;
+}
+
+.sinJobHeader :where(h1, h3, p) {
+  font-weight: 500;
+}
+
+.sinJobHeader h1 {
+  font-size: 30px;
+}
+
+.sinJobHeader div p {
+  color: rgb(24, 24, 24);
+  font-size: 12px;
+}
+
+.sinJobImg {
+  width: 50px;
+  aspect-ratio: 1/1;
+  background-color: burlywood;
+  margin-right: 10px;
+}
+
+.sinJobDetails h3 {
+  font-size: 16px;
+  color: #2b2b2b;
+}
+
+.sinJobDetails h3 span {
+  font-weight: 500;
+}
+
+.sinJobDescription {
+  border-top: 1px solid #d7d7d7;
+  border-bottom: 1px solid #d7d7d7;
+}
+
+.sinJobBtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0px 0px 5px 5px;
+}
+
+.sinJobBtn button {
+  width: 30%;
+  font-size: 16px;
+  padding: 8px;
+  border: none;
+  background-color: #01a501;
+  color: white;
+  border-radius: 2px;
+  cursor: pointer;
+  transition: 300ms linear;
+}
+
+.sinJobBtn button:hover{
+    background-color: #039203;
+}
+
+/* LOGIN PAGE CSS */
+
+.login{
     display: flex;
     flex-direction: column;
-    padding: 5px;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 450px;
+    background-color: #f4f4f4;
+    border-radius: 5px;
 }
 
-.inputDiv input{
+.login h1{
+    font-weight: 600;
+    margin: 10px 0px;
+}
+
+.login p{
+    margin-bottom: 10px;
+    cursor: pointer;
+    color: #020260;
+    text-decoration:1px #020260 underline;
+}
+
+.login form{
+    padding: 20px;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.loginInputDiv{
+    display: flex;
+    flex-direction: column;
+}
+
+.loginInputDiv input{
     padding: 10px;
-    margin: 5px 0px;
+    margin: 2px 0px 5px 0px;
+    width: 25vw;
+    border: 1px solid rgb(230, 230, 230);
     border-radius: 2px;
-    border: 1px solid #d7d7d7;
     outline: none;
 }
 
-.inputDiv input:focus{
-    border: 1px solid #029a02;
+.loginInputDiv input:focus{
+    border: 1px solid rgb(1, 178, 1);
 }
 
-.inputDivCheckBox input{
-    margin: 0px 10px;
-    accent-color: #029a02;
-}
-
-.showJobs{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.showJobs h1{
-    margin-bottom: 20px;
-    font-weight: 600;
-}
-
-.showJobsGrid{
-    display: grid;
-    grid-template-columns: auto auto;
-    column-gap: 50px;
-    row-gap: 20px;
-}
-
-.jobsCard{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: start;
-    background-color: rgb(246, 246, 246);
-    padding: 10px 20px;
-    border-radius: 5px;
-    width: 23vw;
-}
-
-.jobsCard h2{
-    font-size: 24px;
-    font-weight: 600;
-}
-
-.jobsCard h3{
-    font-size: 18px;
-    font-weight: 600;
-    color: rgb(43, 43, 43);
-    line-height: 10px;
-    margin: 5px 0px 10px 0px;
-}
-
-.jobsCard p{
-    font-size: 12px;
-    font-family: Arial, Helvetica, sans-serif;
-    color: #4c4c4c;
-    font-weight: 100;
-}
-
-.jobsCard div button{
-    padding: 5px 10px;
-    margin-top: 20px;
-    margin-right: 10px;
-    border: none;
-    border-radius: 5px;
+.login form button[type="submit"]{
+    background-color: #01a501;
     color: white;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 5px;
+    border-radius: 2px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: 300ms linear;
+}
+
+.login form button[type="submit"]:hover{
+    background-color: #039203;
 }
