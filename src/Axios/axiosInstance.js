@@ -6,4 +6,10 @@ const userInstance = axios.create({
     baseURL: axiosURL
 });
 
+userInstance.interceptors.request.use((request) => {
+    const token = localStorage.getItem("jobportal-jwt");
+    request.headers.Authorization = `Bearer ${token}`;
+    return request;
+});
+
 export { userInstance }
